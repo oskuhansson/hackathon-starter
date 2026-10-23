@@ -151,6 +151,29 @@ $color-mode-type: data;
   @include dark-mode-fixes;
 }
 
+.navbar-warning {
+  background: #ffdd00 !important;
+  border-bottom: 4px solid #ffb703;
+}
+
+.navbar-warning .navbar-brand,
+.navbar-warning .nav-link,
+.navbar-warning .btn,
+.navbar-warning .navbar-toggler {
+  color: #111 !important;
+}
+
+.navbar-warning .btn-outline-light {
+  border-color: rgba(17, 17, 17, 0.7);
+}
+
+.navbar-warning .btn-outline-light:hover,
+.navbar-warning .btn-outline-light:focus,
+.navbar-warning .btn-outline-light:active {
+  background-color: rgba(17, 17, 17, 0.08);
+  color: #111 !important;
+}
+
 // Dark-mode toggle icons: both glyphs are always present in the DOM, and SCSS
 // shows the one that matches the effective theme. Default is moon (page is
 // light); flip to sun whenever the page is in dark mode. `data-bs-theme` is
